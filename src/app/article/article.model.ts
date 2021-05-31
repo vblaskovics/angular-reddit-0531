@@ -1,11 +1,13 @@
 export class Article {
   title: string;
+  author: string;
   link: string;
   votes: number;
 
-  constructor(title: string, link: string, votes?: number) {
+  constructor(title: string, link: string, author: string, votes?: number) {
     this.title = title;
     this.link = link;
+    this.author = author;
     this.votes = votes || 0;
   }
 
