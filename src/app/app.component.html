@@ -22,6 +22,8 @@
 
 </form>
 
+<div *ngIf="articles.length > 2" class="ui message">There are more than 2 articles in  the list!</div>
+
 <a href (click)="toggleSort()">
   <i class="sort icon">Sorting</i>
 </a>
