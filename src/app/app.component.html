@@ -28,6 +28,6 @@
 
 <div class="ui grid posts">
   <app-article *ngFor="let article of sortedArticles(); let i=index"
-  [article]="article" [index]="i + 1">
+  [article]="article" [index]="i + 1" (onDelete)="deleteArticleFromArray($event)">
   </app-article>
 </div>

@@ -55,4 +55,8 @@ export class AppComponent {
     this.ascendingSort = !this.ascendingSort;
     return false;
   }
+
+  deleteArticleFromArray(articleTitle: string): void {
+    this.articles = this.articles.filter(article => article.title !== articleTitle);
+  }
 }
